@@ -73,6 +73,18 @@ public class Main extends Plugin {
                 }
             }
         });
+        handler.register("bn-remove", "<bad-word>", "removes word from badName blacklist.", arg -> {
+            if (byteCode.has("badName")) {
+                data = byteCode.get("badName");
+                if (data.has(arg[0])) {
+                    byteCode.remove("badName", arg[0]);
+                    Log.info("Done!");
+                } else {
+                    Log.err("badName does not contain `" + arg[0] + "`!");
+                }
+            }
+
+        });
         handler.register("bn-clear", "resets badName.cn to default", arg -> {
             if (!understood) {
                 Log.warn("This command will reset badName.cn, use command again to reset.");
