@@ -40,7 +40,6 @@ public class Main extends Plugin {
                 name = byteCode.noColors(name);
                 for (String key : data.keySet()) {
                     if (name.contains(key)) {
-                        player.getInfo().timesKicked--;
                         player.con.kick("Invalid name\n" +
                                 name.replace(key, "[scarlet]"+key+"[]"), 1);
                         Log.info("Kicked (" + player.uuid + " | " + byteCode.noColors(player.name) + ") for invalid name.");
