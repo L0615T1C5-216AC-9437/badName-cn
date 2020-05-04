@@ -41,8 +41,8 @@ public class Main extends Plugin {
                 for (String key : data.keySet()) {
                     if (name.contains(key)) {
                         player.getInfo().timesKicked--;
-                        player.con.kick("Invalid name\n" +
-                                name.replace(key, "[scarlet]"+key+"[]"), 1);
+                        Call.onKick(player.con, "Invalid name\n" +
+                                name.replace(key, "[scarlet]"+key+"[]"));
                         Log.info("Kicked (" + player.uuid + " | " + byteCode.noColors(player.name) + ") for invalid name.");
                         return;
                     }
