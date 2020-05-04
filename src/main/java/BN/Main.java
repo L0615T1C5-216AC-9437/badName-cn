@@ -36,7 +36,7 @@ public class Main extends Plugin {
                 data = byteCode.get("badName");
             }
             if (data != null && !data.isEmpty()) {
-                String name = player.name.toLowerCase().replace("3", "e").replace("1", "i").replace("6", "g").replace("!", "i").replace("$", "s").replace(" ", "").replace("@", "a");
+                String name = player.name.toLowerCase().replace("3", "e").replace("1", "i").replace("6", "g").replace("!", "i").replace("$", "s").replace(" ", "").replace("@", "a").replace("4", "a").replace("0", "o");
                 name = byteCode.noColors(name);
                 for (String key : data.keySet()) {
                     if (name.contains(key)) {
