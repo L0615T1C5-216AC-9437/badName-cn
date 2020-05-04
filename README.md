@@ -1,3 +1,4 @@
+![Java CI](https://github.com/L0615T1C5-216AC-9437/badName-cn/workflows/Java%20CI/badge.svg)
 ### Description
 Kicks people with an inappropriate name. kick duration 1s
 
